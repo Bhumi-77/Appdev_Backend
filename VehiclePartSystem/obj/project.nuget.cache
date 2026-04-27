@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "FyYHpTySvyw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Dell\\source\\repos\\VehiclePartSystem\\VehiclePartSystem\\VehiclePartSystem.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.5\\microsoft.aspnetcore.openapi.10.0.5.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,11 @@
+C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.Domain\bin\Debug\net10.0\VehicleSystem.Domain.deps.json
+C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.Domain\bin\Debug\net10.0\VehicleSystem.Domain.dll
+C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.Domain\bin\Debug\net10.0\VehicleSystem.Domain.pdb
+C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.Domain\obj\Debug\net10.0\VehicleSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.Domain\obj\Debug\net10.0\VehicleSystem.Domain.AssemblyInfoInputs.cache
+C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.Domain\obj\Debug\net10.0\VehicleSystem.Domain.AssemblyInfo.cs
+C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.Domain\obj\Debug\net10.0\VehicleSystem.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.Domain\obj\Debug\net10.0\VehicleSystem.Domain.dll
+C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.Domain\obj\Debug\net10.0\refint\VehicleSystem.Domain.dll
+C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.Domain\obj\Debug\net10.0\VehicleSystem.Domain.pdb
+C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.Domain\obj\Debug\net10.0\ref\VehicleSystem.Domain.dll
