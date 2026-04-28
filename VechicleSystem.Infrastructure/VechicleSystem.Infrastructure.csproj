@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\VehicleSystem.Application\VehicleSystem.Application.csproj" />
     <ProjectReference Include="..\VehicleSystem.Domain\VehicleSystem.Domain.csproj" />
   </ItemGroup>
 

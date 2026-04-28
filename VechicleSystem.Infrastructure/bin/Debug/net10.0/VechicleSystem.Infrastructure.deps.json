@@ -12,6 +12,7 @@
           "Microsoft.EntityFrameworkCore.Design": "10.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.0-preview.4.25258.110",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.0",
+          "VehicleSystem.Application": "1.0.0",
           "VehicleSystem.Domain": "1.0.0"
         },
         "runtime": {
@@ -1059,6 +1060,17 @@
           }
         }
       },
+      "VehicleSystem.Application/1.0.0": {
+        "dependencies": {
+          "VehicleSystem.Domain": "1.0.0"
+        },
+        "runtime": {
+          "VehicleSystem.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "VehicleSystem.Domain/1.0.0": {
         "runtime": {
           "VehicleSystem.Domain.dll": {
@@ -1529,6 +1541,11 @@
       "sha512": "sha512-U9msthvnH2Fsw7xwAvIhNHOdnIjOQTwOc8Vd0oGOsiRcGMGoBFlUD6qtYawRUoQdKH9ysxesZ9juFElt1Jw/7A==",
       "path": "system.windows.extensions/9.0.0",
       "hashPath": "system.windows.extensions.9.0.0.nupkg.sha512"
+    },
+    "VehicleSystem.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "VehicleSystem.Domain/1.0.0": {
       "type": "project",

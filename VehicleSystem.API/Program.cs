@@ -1,16 +1,28 @@
 using Microsoft.EntityFrameworkCore;
 using VehicleSystem.Infrastructure.Data;
+using VehicleSystem.Infrastructure.Repositories;
+using VehicleSystem.Infrastructure.Services;
+using VehicleSystem.Application.Interfaces.Repositories;
+using VehicleSystem.Application.Interfaces.Services;
+
 
 var builder = WebApplication.CreateBuilder(args);
+
 builder.Services.AddCors();
-// Add services
+
 builder.Services.AddControllers();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql("Host=localhost;Port=5432;Database=vehicle_db;Username=postgres;Password=nabin"));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<IFinancialReportRepository, FinancialReportRepository>();
+builder.Services.AddScoped<IFinancialReportService, FinancialReportService>();
+
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 var app = builder.Build();
 
@@ -19,14 +31,11 @@ app.UseCors(x => x
     .AllowAnyMethod()
     .AllowAnyHeader());
 
-// Middleware
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-
 
 app.UseHttpsRedirection();
 

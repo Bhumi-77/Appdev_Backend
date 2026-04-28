@@ -1168,6 +1168,7 @@
           "Microsoft.EntityFrameworkCore": "10.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.0-preview.3.25172.2",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.0",
+          "VehicleSystem.Application": "1.0.0",
           "VehicleSystem.Domain": "1.0.0"
         },
         "compile": {
@@ -3632,23 +3633,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dell\\.nuget\\packages\\": {},
+    "C:\\Users\\Acer Nitro\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dell\\source\\repos\\VehiclePartSystem\\VehicleSystem.API\\VehicleSystem.API.csproj",
+      "projectUniqueName": "E:\\AppDevVehicle\\Appdev_Backend\\VehicleSystem.API\\VehicleSystem.API.csproj",
       "projectName": "VehicleSystem.API",
-      "projectPath": "C:\\Users\\Dell\\source\\repos\\VehiclePartSystem\\VehicleSystem.API\\VehicleSystem.API.csproj",
-      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dell\\source\\repos\\VehiclePartSystem\\VehicleSystem.API\\obj\\",
+      "projectPath": "E:\\AppDevVehicle\\Appdev_Backend\\VehicleSystem.API\\VehicleSystem.API.csproj",
+      "packagesPath": "C:\\Users\\Acer Nitro\\.nuget\\packages\\",
+      "outputPath": "E:\\AppDevVehicle\\Appdev_Backend\\VehicleSystem.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Acer Nitro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3662,17 +3663,16 @@
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\Dell\\source\\repos\\VehiclePartSystem\\VechicleSystem.Infrastructure\\VechicleSystem.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Dell\\source\\repos\\VehiclePartSystem\\VechicleSystem.Infrastructure\\VechicleSystem.Infrastructure.csproj"
+            "E:\\AppDevVehicle\\Appdev_Backend\\VechicleSystem.Infrastructure\\VechicleSystem.Infrastructure.csproj": {
+              "projectPath": "E:\\AppDevVehicle\\Appdev_Backend\\VechicleSystem.Infrastructure\\VechicleSystem.Infrastructure.csproj"
             },
-            "C:\\Users\\Dell\\source\\repos\\VehiclePartSystem\\VehicleSystem.Application\\VehicleSystem.Application.csproj": {
-              "projectPath": "C:\\Users\\Dell\\source\\repos\\VehiclePartSystem\\VehicleSystem.Application\\VehicleSystem.Application.csproj"
+            "E:\\AppDevVehicle\\Appdev_Backend\\VehicleSystem.Application\\VehicleSystem.Application.csproj": {
+              "projectPath": "E:\\AppDevVehicle\\Appdev_Backend\\VehicleSystem.Application\\VehicleSystem.Application.csproj"
             },
-            "C:\\Users\\Dell\\source\\repos\\VehiclePartSystem\\VehicleSystem.Domain\\VehicleSystem.Domain.csproj": {
-              "projectPath": "C:\\Users\\Dell\\source\\repos\\VehiclePartSystem\\VehicleSystem.Domain\\VehicleSystem.Domain.csproj"
+            "E:\\AppDevVehicle\\Appdev_Backend\\VehicleSystem.Domain\\VehicleSystem.Domain.csproj": {
+              "projectPath": "E:\\AppDevVehicle\\Appdev_Backend\\VehicleSystem.Domain\\VehicleSystem.Domain.csproj"
             }
           }
         }
@@ -3691,7 +3691,6 @@
     },
     "frameworks": {
       "net10.0": {
-        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": {
@@ -3736,7 +3735,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

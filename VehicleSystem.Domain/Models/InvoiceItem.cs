@@ -1,4 +1,4 @@
-﻿namespace Vehicle_System.Models
+﻿namespace VehicleSystem.Domain.Models
 {
     public class InvoiceItem
     {
