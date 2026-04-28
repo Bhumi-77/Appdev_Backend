@@ -1,4 +1,6 @@
-﻿namespace Vehicle_System.Models
+﻿using System.Collections.Generic;
+
+namespace VehicleSystem.Domain.Models
 {
     public class Customer
     {
@@ -6,7 +8,7 @@
         public string Name { get; set; }
         public string Phone { get; set; }
 
-        public List<Vehicle> Vehicles { get; set; }
-        public List<Invoice> Invoices { get; set; }
+        public virtual ICollection<Vehicle> Vehicles { get; set; } = new List<Vehicle>();
+        public virtual ICollection<Invoice> Invoices { get; set; } = new List<Invoice>();
     }
 }

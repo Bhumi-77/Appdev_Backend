@@ -1,9 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
-using Npgsql.EntityFrameworkCore.PostgreSQL;
-using VehicleSystem.Infrastructure.Data;
+using VechicleSystem.Infrastructure.Data;
 
-namespace VehicleSystem.API.Data
+namespace VechicleSystem.Infrastructure.Data
 {
     public class AppDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
     {
@@ -11,7 +10,7 @@ namespace VehicleSystem.API.Data
         {
             var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
 
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=vehicle_db;Username=postgres;Password=nabin");
+            optionsBuilder.UseNpgsql("Host=localhost;Database=VehiclePartsDB;Port=5432;User Id=postgres;Password=ajoob1234");
 
             return new AppDbContext(optionsBuilder.Options);
         }
