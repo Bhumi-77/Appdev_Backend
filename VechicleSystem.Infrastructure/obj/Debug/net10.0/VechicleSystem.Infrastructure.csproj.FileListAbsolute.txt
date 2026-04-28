@@ -61,3 +61,4 @@ C:\Users\Dell\source\repos\VehiclePartSystem\VechicleSystem.Infrastructure\bin\D
 C:\Users\Dell\source\repos\VehiclePartSystem\VechicleSystem.Infrastructure\bin\Debug\net10.0\BuildHost-netcore\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll.config
 C:\Users\Dell\source\repos\VehiclePartSystem\VechicleSystem.Infrastructure\bin\Debug\net10.0\BuildHost-netcore\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.runtimeconfig.json
 C:\Users\Dell\source\repos\VehiclePartSystem\VechicleSystem.Infrastructure\bin\Debug\net10.0\BuildHost-netcore\System.Collections.Immutable.dll
+C:\Users\Dell\source\repos\VehiclePartSystem\VechicleSystem.Infrastructure\obj\Debug\net10.0\VechicleSystem.Infrastructure.sourcelink.json

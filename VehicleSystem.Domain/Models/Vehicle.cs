@@ -3,5 +3,6 @@
     public class Vehicle
     {
         public int Id { get; set; }
+        public object VehicleNumber { get; set; }
     }
 }

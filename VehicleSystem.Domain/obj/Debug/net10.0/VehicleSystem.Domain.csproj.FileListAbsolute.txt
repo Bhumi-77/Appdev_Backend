@@ -9,3 +9,4 @@ C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.Domain\obj\Debug\net1
 C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.Domain\obj\Debug\net10.0\refint\VehicleSystem.Domain.dll
 C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.Domain\obj\Debug\net10.0\VehicleSystem.Domain.pdb
 C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.Domain\obj\Debug\net10.0\ref\VehicleSystem.Domain.dll
+C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.Domain\obj\Debug\net10.0\VehicleSystem.Domain.sourcelink.json
