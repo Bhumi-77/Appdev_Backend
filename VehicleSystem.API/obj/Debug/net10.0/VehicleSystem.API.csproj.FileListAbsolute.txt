@@ -26,9 +26,6 @@ C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.API\bin\Debug\net10.0
 C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.API\bin\Debug\net10.0\Newtonsoft.Json.dll
 C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.API\bin\Debug\net10.0\Npgsql.dll
 C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.API\bin\Debug\net10.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.API\bin\Debug\net10.0\System.CodeDom.dll
 C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.API\bin\Debug\net10.0\System.Composition.AttributedModel.dll
 C:\Users\Dell\source\repos\VehiclePartSystem\VehicleSystem.API\bin\Debug\net10.0\System.Composition.Convention.dll
