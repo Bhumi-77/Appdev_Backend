@@ -48,7 +48,7 @@ builder.Services.AddScoped<IVendorService, VendorService>();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReact", policy =>
-        policy.WithOrigins("http://localhost:3000")
+        policy.WithOrigins("http://localhost:5173")
               .AllowAnyMethod()
               .AllowAnyHeader());
 });
