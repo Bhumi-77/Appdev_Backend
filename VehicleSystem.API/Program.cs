@@ -42,7 +42,12 @@ builder.Services.AddAuthentication(options =>
 });
 
 // Dependency Injection
+
+// for vendor management
 builder.Services.AddScoped<IVendorService, VendorService>();
+
+// for parts management
+builder.Services.AddScoped<IPartService, PartService>();
 
 // CORS for React frontend 
 builder.Services.AddCors(options =>
