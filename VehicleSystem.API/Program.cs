@@ -49,6 +49,9 @@ builder.Services.AddScoped<IVendorService, VendorService>();
 // for parts management
 builder.Services.AddScoped<IPartService, PartService>();
 
+// for PurchaseInvoice service
+builder.Services.AddScoped<IPurchaseInvoiceService, PurchaseInvoiceService>();
+
 // CORS for React frontend 
 builder.Services.AddCors(options =>
 {
