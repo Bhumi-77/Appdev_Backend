@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="VechicleSystem.Infrastructure/VechicleSystem.Infrastructure.csproj" Id="7fe2ef73-e66b-45b9-857b-c958d6117ab7" />
+  <Project Path="VehicleSystem.API/VehicleSystem.API.csproj" Id="36ab1013-7f8a-466a-be31-bf39731dc353" />
+  <Project Path="VehicleSystem.Application/VehicleSystem.Application.csproj" Id="6274e9e9-b0da-4019-adee-605ce8aa4385" />
+  <Project Path="VehicleSystem.Domain/VehicleSystem.Domain.csproj" Id="3bddb110-85e4-4c2c-88ea-ee78093138d9" />
+</Solution>
