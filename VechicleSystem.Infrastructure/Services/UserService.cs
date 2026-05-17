@@ -2,46 +2,50 @@
 using VehicleSystem.Application.Interfaces.Repositories;
 using VehicleSystem.Application.Interfaces.Services;
 using VehicleSystem.Domain.Models;
-using VehicleSystem.Infrastructure.Repositories;
 
 namespace VehicleSystem.Infrastructure.Services
 {
     public class UserService : IUserService
     {
-        private readonly IUserRepository _repository;
+        private readonly IUserRepository _userRepository;
 
-        public UserService(IUserRepository repository)
+        public UserService(IUserRepository userRepository)
         {
-            _repository = repository;
+            _userRepository = userRepository;
         }
 
         public async Task<List<StaffResponseDto>> GetAllStaffAsync()
         {
-            var users = await _repository.GetAllStaffAsync();
-            return users.Select(MapToDto).ToList();
+            var users = await _userRepository.GetAllStaffAsync();
+
+            return users.Select(u => new StaffResponseDto
+            {
+                Id = u.Id,
+                FullName = u.FullName,
+                Email = u.Email,
+                Role = u.Role,
+                IsActive = u.IsActive
+            }).ToList();
         }
 
         public async Task<StaffResponseDto?> GetStaffByIdAsync(int id)
         {
-            var user = await _repository.GetByIdAsync(id);
+            var user = await _userRepository.GetByIdAsync(id);
 
-            if (user == null)
+            if (user == null) return null;
+
+            return new StaffResponseDto
             {
-                return null;
-            }
-
-            return MapToDto(user);
+                Id = user.Id,
+                FullName = user.FullName,
+                Email = user.Email,
+                Role = user.Role,
+                IsActive = user.IsActive
+            };
         }
 
         public async Task<StaffResponseDto> CreateStaffAsync(CreateStaffDto dto)
         {
-            var existingUser = await _repository.GetByEmailAsync(dto.Email);
-
-            if (existingUser != null)
-            {
-                throw new Exception("Email already exists.");
-            }
-
             var user = new User
             {
                 FullName = dto.FullName,
@@ -52,43 +56,42 @@ namespace VehicleSystem.Infrastructure.Services
                 CreatedAt = DateTime.UtcNow
             };
 
-            var created = await _repository.CreateAsync(user);
-            return MapToDto(created);
-        }
+            await _userRepository.AddAsync(user);
 
-        public async Task<StaffResponseDto?> UpdateStaffAsync(int id, UpdateStaffDto dto)
-        {
-            var user = await _repository.GetByIdAsync(id);
-
-            if (user == null)
-            {
-                return null;
-            }
-
-            user.FullName = dto.FullName;
-            user.Role = dto.Role;
-            user.IsActive = dto.IsActive;
-
-            var updated = await _repository.UpdateAsync(user);
-            return MapToDto(updated);
-        }
-
-        public async Task<bool> DeleteStaffAsync(int id)
-        {
-            return await _repository.DeleteAsync(id);
-        }
-
-        private StaffResponseDto MapToDto(User user)
-        {
             return new StaffResponseDto
             {
                 Id = user.Id,
                 FullName = user.FullName,
                 Email = user.Email,
                 Role = user.Role,
-                IsActive = user.IsActive,
-                CreatedAt = user.CreatedAt
+                IsActive = user.IsActive
             };
+        }
+
+        public async Task<bool> UpdateStaffAsync(int id, UpdateStaffDto dto)
+        {
+            var user = await _userRepository.GetByIdAsync(id);
+
+            if (user == null) return false;
+
+            user.FullName = dto.FullName;
+            user.Role = dto.Role;
+            user.IsActive = dto.IsActive;
+
+            await _userRepository.UpdateAsync(user);
+            return true;
+        }
+
+        public async Task<bool> DeactivateStaffAsync(int id)
+        {
+            var user = await _userRepository.GetByIdAsync(id);
+
+            if (user == null) return false;
+
+            user.IsActive = false;
+
+            await _userRepository.UpdateAsync(user);
+            return true;
         }
     }
 }

@@ -5,6 +5,41 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/CreditReminders/pending": {
+      "get": {
+        "tags": [
+          "CreditReminders"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CreditReminders/send/{invoiceId}": {
+      "post": {
+        "tags": [
+          "CreditReminders"
+        ],
+        "parameters": [
+          {
+            "name": "invoiceId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/FinancialReports/daily": {
       "get": {
         "tags": [
@@ -71,6 +106,18 @@
               "format": "int32"
             }
           }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Notifications/low-stock": {
+      "get": {
+        "tags": [
+          "Notifications"
         ],
         "responses": {
           "200": {
@@ -250,7 +297,13 @@
   },
   "tags": [
     {
+      "name": "CreditReminders"
+    },
+    {
       "name": "FinancialReports"
+    },
+    {
+      "name": "Notifications"
     },
     {
       "name": "Staff"

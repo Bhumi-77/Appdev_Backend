@@ -8,71 +8,58 @@ namespace VehicleSystem.API.Controllers
     [ApiController]
     public class StaffController : ControllerBase
     {
-        private readonly IUserService _service;
+        private readonly IUserService _userService;
 
-        public StaffController(IUserService service)
+        public StaffController(IUserService userService)
         {
-            _service = service;
+            _userService = userService;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAllStaff()
         {
-            var result = await _service.GetAllStaffAsync();
-            return Ok(result);
+            var staff = await _userService.GetAllStaffAsync();
+            return Ok(staff);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetStaffById(int id)
         {
-            var result = await _service.GetStaffByIdAsync(id);
+            var staff = await _userService.GetStaffByIdAsync(id);
 
-            if (result == null)
-            {
+            if (staff == null)
                 return NotFound("Staff not found.");
-            }
 
-            return Ok(result);
+            return Ok(staff);
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateStaff([FromBody] CreateStaffDto dto)
+        public async Task<IActionResult> CreateStaff(CreateStaffDto dto)
         {
-            try
-            {
-                var result = await _service.CreateStaffAsync(dto);
-                return Ok(result);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            var staff = await _userService.CreateStaffAsync(dto);
+            return Ok(staff);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateStaff(int id, [FromBody] UpdateStaffDto dto)
+        public async Task<IActionResult> UpdateStaff(int id, UpdateStaffDto dto)
         {
-            var result = await _service.UpdateStaffAsync(id, dto);
+            var result = await _userService.UpdateStaffAsync(id, dto);
 
-            if (result == null)
-            {
+            if (!result)
                 return NotFound("Staff not found.");
-            }
 
-            return Ok(result);
+            return Ok("Staff updated successfully.");
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteStaff(int id)
+        public async Task<IActionResult> DeactivateStaff(int id)
         {
-            var result = await _service.DeleteStaffAsync(id);
+            var result = await _userService.DeactivateStaffAsync(id);
 
             if (!result)
-            {
                 return NotFound("Staff not found.");
-            }
 
-            return Ok("Staff deleted successfully.");
+            return Ok("Staff deactivated successfully.");
         }
     }
 }

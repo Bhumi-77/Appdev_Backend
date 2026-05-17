@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("de763cc1-16f3-4cd7-a289-1891caad5d0d")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("VehicleSystem.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1133466b785bd826e96311cfdd414906d6f9e67b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f45850c1af34ca8f943268c31796758cbc38f729")]
 [assembly: System.Reflection.AssemblyProductAttribute("VehicleSystem.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VehicleSystem.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

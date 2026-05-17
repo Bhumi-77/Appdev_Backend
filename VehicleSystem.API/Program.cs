@@ -4,7 +4,9 @@ using VehicleSystem.Infrastructure.Repositories;
 using VehicleSystem.Infrastructure.Services;
 using VehicleSystem.Application.Interfaces.Repositories;
 using VehicleSystem.Application.Interfaces.Services;
-
+using VehicleSystem.Application.DTOs;
+using VehicleSystem.Application.Interfaces.Services;
+using VehicleSystem.Infrastructure.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +25,11 @@ builder.Services.AddScoped<IFinancialReportService, FinancialReportService>();
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.Configure<EmailSettings>(
+    builder.Configuration.GetSection("EmailSettings")
+);
+
+builder.Services.AddScoped<IEmailService, EmailService>();
 
 var app = builder.Build();
 
